@@ -3,7 +3,7 @@ const User = require("../../models/user")
 exports.getServer = async(req, res) => {
     try{
         const {id} = req.user;
-        const servers = await User.findById(id, {servers: 1}).populate("servers");
+        const servers = await User.findById({_id: id}, {servers: 1}).populate("servers");
 
         if(!servers){
             return res.status(400).json({
