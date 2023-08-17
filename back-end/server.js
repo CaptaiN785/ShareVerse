@@ -37,6 +37,10 @@ connectStorage()
 
 const {sendOtp} = require("./utils/sendEmail")
 
+app.get("/", async(req, res) => {
+    res.send("<h2>ShareVerse API is working</h2>")
+})
+
 app.listen(PORT, () => {
     console.log("App is listening at port: ", PORT);
 })
