@@ -1,0 +1,122 @@
+.nav-bar-wrapper{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 4;
+    /* background:var(--primary-dark); */
+    /* box-shadow: 0 2px 5px var(--secondary-light) */
+}
+.nav-bar{
+    margin-inline: auto;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    padding:1rem 3rem;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color:#fff;
+    position: relative;
+    z-index: 2;
+}
+.logo a p:first-child{
+    /* color:var(--secondary-light); */
+    font-weight: 500;
+}
+.logo a p:last-child{
+    font-weight: 300;
+}
+
+/* .logo a::after{
+    content: '';
+    position:absolute;
+    width:57%;
+    height:120%;
+    background:var(--secondary-dark);
+    z-index: -1;
+    margin-left: -7px;
+    border-radius: 50%;
+} */
+.nav-link{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    transition: 0.5s;
+}
+.nav-link a{
+    padding:5px 10px;
+}
+.nav-link a:hover{
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+.nav-link a, p{
+    color:#fff;
+    font-weight: 400;
+    cursor: pointer;
+}
+.active-link{
+    position: relative;
+    z-index: 2;
+}
+.active-link::after{
+    content: '';
+    position: absolute;
+    height:2px;
+    width:100%;
+    background:#fff;
+    bottom: 0;
+    animation: slide 0.8s alternate-reverse infinite;
+}
+@keyframes slide {
+    0%{
+        left:0;
+        width:110%;
+    }
+    100%{
+        left:50%;
+        width:1px;
+    }
+}
+.nav-btn {
+    display: none;
+}
+.nav-btn button{
+    background:#fff;
+    color:var(--primary-dark);
+    padding:0 8px;
+    padding-top: 4px;
+    padding-bottom: 0px;
+    font-size:1.2rem;
+    border:1px solid var(--primary-dark);
+    outline:none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:650px) {
+    .nav-bar{
+        padding:1rem;
+    }
+}
+@media screen and (max-width:500px) {
+    .nav-btn{
+        display: block;
+    }
+    .nav-link{
+        position: absolute;
+        flex-direction: column;
+        row-gap: 1rem;
+        top:0;
+        z-index:-1;
+        background: var(--primary-dark);
+        margin:0;
+        left:-100%;
+        width:100%;
+        padding:1rem;
+        padding-top:70px;
+    }
+}

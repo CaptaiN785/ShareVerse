@@ -1,0 +1,32 @@
+#signup, #login{
+    background: linear-gradient(180deg, var(--primary-dark), var(--secondary-dark),var(--secondary-dark));
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding:2rem; 
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    min-height: 100vh;
+}
+#signup{
+    padding-top:100px;
+    height: max-content;
+}
+#otp-verify{
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-dark);
+}
+#otp-verify .form-container{
+    margin-top: 0;
+}
