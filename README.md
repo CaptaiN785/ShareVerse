@@ -1,5 +1,7 @@
 # Introducing ShareVerse: Your Ultimate File Storage Solution
 
+[Visit our website](https://myshareverse.netlify.app/) and revolutionize your file storage experience!
+
 ShareVerse is an innovative file storage solution that offers users a seamless and flexible way to manage their documents. Built on the powerful foundations of Google Firebase and MongoDB as storage clouds, our platform provides a range of features designed to simplify file management.
 
 ## Key Features
@@ -18,4 +20,4 @@ ShareVerse is an innovative file storage solution that offers users a seamless a
 
 Whether you're a creative professional managing multimedia assets or a team collaborating on critical documents, ShareVerse offers the tools you need to streamline your file storage process. Join us today and discover a new level of convenience, flexibility, and efficiency in file management.
 
-[Visit our website](https://myshareverse.netlify.app/) and revolutionize your file storage experience!
+
